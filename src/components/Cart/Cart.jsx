@@ -6,7 +6,7 @@ const Cart = ({ cart }) => {
   let shipping = 0;
   for (const product of cart) {
     total = total + product.price;
-    shipping = shipping + product.shipping;
+    shipping = shipping+ product.shipping;
   }
   let tax = (total * 0.1).toFixed(2);
 
